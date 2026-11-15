@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bq3huk364skd3"]
+
+[ext_resource type="Script" uid="uid://uusxfhw2epny" path="res://button.gd" id="1_0fbet"]
+[ext_resource type="Texture2D" uid="uid://bxo6gi5lfkt8m" path="res://WhatsApp Image 2026-11-15 at 1.09.33 PM.jpeg" id="2_62e2m"]
+[ext_resource type="Texture2D" uid="uid://pyw220sudx7p" path="res://WhatsApp Image 2026-11-15 at 2.17.52 PM.jpeg" id="3_qtu10"]
+
+[node name="Control" type="Control" unique_id=1539433699]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -1.0
+offset_right = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1834348465]
+texture = ExtResource("2_62e2m")
+centered = false
+
+[node name="Button" type="Button" parent="." unique_id=150042548]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 307.0
+offset_right = 365.0
+offset_bottom = 338.0
+scale = Vector2(3.163146, 2.6008165)
+text = "start
+"
+script = ExtResource("1_0fbet")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=828175975]
+position = Vector2(887, 143)
+scale = Vector2(0.32962292, 0.17783086)
+texture = ExtResource("3_qtu10")
+centered = false
+
+[connection signal="button_down" from="Button" to="Button" method="_on_button_down"]
